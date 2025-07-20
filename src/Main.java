@@ -1,32 +1,13 @@
-import java.lang.reflect.Array;
-import java.util.Arrays;
-import java.util.Random;
+
+
 
 public class Main {
     public static void main(String[] args) {
-        //Array maker
-        Random randomNumbers = new Random();
-        int[] test = new int[10];
-        for (int i = 0; i < test.length; i++) {
-            test[i] = randomNumbers.nextInt(100);
-        }
-        System.out.println(Arrays.toString(test));
-
-
-//         InsertionSort is = new InsertionSort();
-//         is.iSort(test);
-//         System.out.println(Arrays.toString(test));
-
-//        MergeSort mg = new MergeSort();
-//        mg.mergeSort(test);
-//        System.out.println(Arrays.toString(test));
-
-//        BublleSort bublleS = new BublleSort();
-//        bublleS.bubbleSort(test);
-//        System.out.println(Arrays.toString(test));
-
-
-
-
+        char[] testeChar = {'a', 'b', 'g', 't', 'r'};
+        int[] numstest = {0, 0, 1, 1, 1, 2, 2, 3, 3, 4, 5, 6, 7, 8};
+        RemoveDuplicates rm = new RemoveDuplicates();
+        System.out.println(rm.removeDuplicates(numstest));
+        PrintArray.printArrayInt(numstest);
+        PrintArray.printArrayChar(testeChar);
     }
-        }
+}
